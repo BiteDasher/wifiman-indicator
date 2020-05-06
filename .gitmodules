@@ -1,0 +1,3 @@
+[submodule "vindicator"]
+	path = vindicator
+	url = https://github.com/platofff/vindicator.git
