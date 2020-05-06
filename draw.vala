@@ -1,5 +1,5 @@
 namespace Custom {
-public static async void update_indicator_icon () {	
+public static void update_indicator_icon () {	
 	string shell_command = "get_iw_signal";
 	string stdout;
 	Process.spawn_command_line_sync (shell_command, out stdout);
