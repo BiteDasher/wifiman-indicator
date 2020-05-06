@@ -3,8 +3,7 @@ ifeq ($(PREFIX),)
 endif
 
 all:
-	cd vindicator && $(MAKE) PREFIX=$(DESTDIR)$(PREFIX)
-	UPDATE_ICON=../draw.vala
+	cd vindicator && $(MAKE) PREFIX=$(DESTDIR)$(PREFIX) UPDATE_ICON=../draw.vala
 
 clean:
 	cd vindicator
