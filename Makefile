@@ -12,7 +12,7 @@ clean:
 install: vindicator
 	install -d $(DESTDIR)$(PREFIX)/bin/
 	install -m 755 get_iw_signal $(DESTDIR)$(PREFIX)/bin/
-	cd vindicator && $(MAKE) install
+	cd vindicator && $(MAKE) PREFIX=$(PREFIX) install
 
 uninstall:
 	rm $(PREFIX)/bin/get_iw_signal
