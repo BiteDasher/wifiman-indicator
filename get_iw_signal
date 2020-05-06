@@ -1,0 +1,2 @@
+#!/bin/bash
+iwconfig 2>/dev/null | grep "Link Quality" | sed -e 's/^[ \t]*//' | cut -d" " -f 2 | cut -d"=" -f 2
