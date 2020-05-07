@@ -1,7 +1,11 @@
 [Unit]
 Description=Wifi
+After=graphical.target
 
 [Service]
 Type=simple
 Restart=always
 ExecStart=vindicator /tmp/signal "wifistart.sh"
+
+[Install]
+WantedBy=multi-user.target
