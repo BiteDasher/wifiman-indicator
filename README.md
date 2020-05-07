@@ -6,6 +6,10 @@ LibIndicator support for WifiMan. Written in Vala
 Flickering in GNOME with KStatus/LibAppIndicator support \
 and Top Icons+. We can do nothing about it. Also, the GNOME does not officially support the tray.
 
+# Useful information:
+
+Execute **wifistart.sh toggle** to enable/disable indicator autoload
+
 # Dependencies:
 First, make sure you have wifiman / wifigui installed. \
 Next: \
