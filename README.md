@@ -14,12 +14,11 @@ Execute **wmindtoggle toggle** for automatic indicator startup \
 # Dependencies:
 First, make sure you have wifiman / wifigui installed. \
 Next: \
-valac (I have 0.48.5) (only for compiling) \
+valac (I have 0.48.5) (makedepend) \
 GTK3 \
 LibAppIndicator \
-zenity \
 xdg-user-dirs \
-binutils (only for compiling)\
+binutils (makedepend)\
 wireless-tools
 
 # How-to build:
