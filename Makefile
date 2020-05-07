@@ -18,6 +18,7 @@ help:
 	@echo "make clean for cleaning vindicator folder"
 
 all:
+	git submodule update --init --recursive
 	cd vindicator && $(MAKE) PREFIX=$(PREFIX) UPDATE_ICON=../draw.vala
 
 clean:
