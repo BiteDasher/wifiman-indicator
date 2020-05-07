@@ -19,7 +19,8 @@ GTK3 \
 LibAppIndicator \
 xdg-user-dirs \
 binutils (makedepend)\
-wireless-tools
+wireless-tools \
+polkit
 
 # How-to build:
 
