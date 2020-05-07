@@ -1,0 +1,6 @@
+[Unit]
+Description=Wifi
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/vindicator /tmp/signal "wifistart.sh"
