@@ -7,6 +7,7 @@ if ! [ "$(command -v wifiman)" ]; then echo "wifiman not found" >> .tmp; berror=
 if ! [ "$(command -v iwconfig)" ]; then echo "wireless-tools not found" >> .tmp; berror=1; fi
 if ! [ -d /etc/xdg ]; then echo "xdg-user-dirs not found" >> .tmp; berror=1; fi
 if ! [ "$(command -v strip)" ]; then echo "binutils not found" >> .tmp; berror=1; fi
-if ! [ "$(command -v zenity)" ]; then echo"zenity not found" >> .tmp; berror=1; fi
+if ! [ "$(command -v zenity)" ]; then echo "zenity not found" >> .tmp; berror=1; fi
+if ! [ "$(command -v pkexec)" ]; then echo "polkit not found" >> .tmo; berror=1; fi
 if [ "$berror" ]; then cat .tmp; rm .tmp; exit 1; else
 echo "All cool"; fi
