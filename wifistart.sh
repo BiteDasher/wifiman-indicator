@@ -8,10 +8,18 @@ sed -i /etc/xdg/autostart/indicator.desktop -e 's/\[Desktop\ Entry\]/\#\[Desktop
 ;;
 start)
 vindicator /tmp/signal "wifistart.sh" &>/dev/null 2>&1 & disown
+exit 0
 ;;
 stop)
 killall vindicator
+exit 0
 ;;
+*)
+echo "Available arguments:
+toggle
+start
+stop"
+exit 1
 esac
 fi
 if ! [ "$(command -v wifigui)" ]; then zenity --error --title="Error" --text="WifiMan not found!"; exit 1; fi
