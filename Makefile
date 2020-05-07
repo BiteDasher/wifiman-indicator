@@ -6,8 +6,8 @@ ifeq ($(XDG_DEST),)
 endif
 
 help:
-	@echo "make all for compiling vindicator and draw.vala"
-	@echo "make install for installing wifiman-indicator"
+	@echo "make all for installing vindicator and draw.vala"
+	@echo "make install for installing wifiman"
 	@echo "make uninstall for uninstalling wifiman-indicator"
 	@echo "make clean for cleaning vindicator folder"
 
