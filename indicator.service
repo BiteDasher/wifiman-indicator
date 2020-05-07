@@ -3,5 +3,5 @@ Description=Wifi
 
 [Service]
 Type=simple
-Restart=on-failure
-ExecStart=/usr/local/bin/vindicator /tmp/signal "wifistart.sh"
+Restart=always
+ExecStart=vindicator /tmp/signal "wifistart.sh"
