@@ -7,9 +7,9 @@ Flickering in GNOME with KStatus/LibAppIndicator support \
 and Top Icons+. We can do nothing about it. Also, the GNOME does not officially support the tray.
 
 # Useful information:
-Execute **systemctl --user enable indicator.service** for automatic indicator startup \
-**systemctl --user start indicator.service** for turning on the indicator \
-**systemctl --user stop indicator.service** for turning off the indicator
+Execute **wmindtoggle toggle** for automatic indicator startup \
+**wmindtoggle start** for turning on the indicator \
+**wmindtoggle stop** for turning off the indicator
 
 # Dependencies:
 First, make sure you have wifiman / wifigui installed. \
@@ -18,7 +18,7 @@ valac (I have 0.48.5) (only for compiling) \
 GTK3 \
 LibAppIndicator \
 zenity \
-systemd \
+xdg-user-dirs \
 binutils (only for compiling)\
 wireless-tools
 

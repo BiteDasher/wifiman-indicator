@@ -1,0 +1,30 @@
+#!/usr/bin/bash
+if [ $1 ]; then
+case $1 in
+toggle)
+if ! [ $UID == 0 ]; then echo "Run toggle only by root"; exit 1; fi
+if [ "$(cat /etc/xdg/autostart/indicator.desktop | grep "#")" ]; then
+sed "s/\#\[Desktop\ Entry\]/\[Desktop\ Entry\]/g" -i /etc/xdg/autostart/indicator.desktop; echo Added to autoload; else
+sed "s/\[Desktop\ Entry\]/\#\[Desktop\ Entry\]/g" -i /etc/xdg/autostart/indicator.desktop; echo Removed from autoload; fi; exit 0
+;;
+start)
+vindicator /tmp/signal "pkexec wifigui" &>/dev/null 2>&1 & disown
+exit 0
+;;
+stop)
+killall vindicator
+exit 0
+;;
+*)
+echo "Available arguments:
+toggle
+start
+stop"
+exit 1
+esac
+else
+echo "Available arguments:
+toggle
+start
+stop"
+exit 1; fi

@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=wifiman-indicator
+Comment="Run wifiman-indicator"
+Type=Application
+Exec=vindicator /tmp/signal "pkexec wifigui"
