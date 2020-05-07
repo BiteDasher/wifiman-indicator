@@ -13,7 +13,7 @@ valac (I have 0.48.5) (only for compiling) \
 GTK3 \
 LibAppIndicator \
 zenity \
-systemd \
+xdg-user-dirs \
 binutils (only for compiling)\
 wireless-tools
 
