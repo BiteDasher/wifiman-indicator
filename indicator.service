@@ -4,3 +4,6 @@ Description=Wifi
 [Service]
 Type=simple
 ExecStart=/usr/local/bin/vindicator /tmp/signal "wifistart.sh"
+
+[Install]
+WantedBy=multi-user.target
