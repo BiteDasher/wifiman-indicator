@@ -4,7 +4,7 @@ LibIndicator support for WifiMan. Written in Vala
 # Dependencies:
 First, make sure you have wifiman / wifigui installed. \
 Next: \
-valac (I have 0.48.5) (only for compiling)
+valac (I have 0.48.5) (only for compiling) \
 GTK3 \ 
 LibIndicator \
 zenity \
