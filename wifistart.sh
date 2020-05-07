@@ -2,6 +2,7 @@
 if [ $1 ]; then
 case $1 in
 toggle)
+if ! [ $UID == 0 ]; then echo "Run toggle only by root"; exit 1; fi
 if [ "$(cat /etc/xdg/autostart/indicator.desktop | grep "#")" ]; then
 sed -i /etc/xdg/autostart/indicator.desktop -e 's/\#\[Desktop\ Entry\]/\[Desktop\ Entry\]/g'; echo Added to autoload; else
 sed -i /etc/xdg/autostart/indicator.desktop -e 's/\[Desktop\ Entry\]/\#\[Desktop\ Entry\]/g'; echo Removed from autoload; fi; exit 0
