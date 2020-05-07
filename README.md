@@ -1,6 +1,11 @@
 # wifiman-indicator
 LibIndicator support for WifiMan. Written in Vala
 
+# Known issues:
+
+Flickering in GNOME with KStatus/LibAppIndicator support \
+and Top Icons+. We can do nothing about it. Also, the GNOME does not officially support the tray.
+
 # Dependencies:
 First, make sure you have wifiman / wifigui installed. \
 Next: \
