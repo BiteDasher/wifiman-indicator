@@ -27,3 +27,6 @@ For this indicator, __make && sudo make install && ./dist_install.sh__
 
 # HUGE Thanks to:
 https://github.com/platofff for writing this stuff.
+
+# AUR git clone link:
+https://aur.archlinux.org/wifiman-indicator.git
