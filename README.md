@@ -6,13 +6,18 @@ First, make sure you have wifiman / wifigui installed. \
 Next: \
 valac (I have 0.48.5) (only for compiling) \
 GTK3 \
-LibIndicator \
+LibAppIndicator \
 zenity \
 systemd \
-iwconfig
+binutils (only for compiling)\
+wireless-tools
+
+# How-to build:
+
+**make help**
 
 # Installation:
-For wifiman, **git clone https://github.com/BiteDasher/wifiman.git** \
+For wifiman, **git clone https://github.com/BiteDasher/wifiman.git && cd wifiman && make && sudo make install** \
 For this indicator, __make && sudo make install && ./dist_install.sh__
 
 # HUGE Thanks to:
