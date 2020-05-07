@@ -9,8 +9,8 @@ and Top Icons+. We can do nothing about it. Also, the GNOME does not officially 
 # Useful information:
 
 Execute **wifistart.sh toggle** to enable/disable indicator autoload \
-**wifistart.sh start** to start indicator** \
-**wifistart.sh stop** to start indicator**
+**wifistart.sh start** to start indicator \
+**wifistart.sh stop** to start indicator
 
 # Dependencies:
 First, make sure you have wifiman / wifigui installed. \
