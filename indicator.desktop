@@ -1,6 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=WifiMan-Indicator
-Comment="WifiMan Indicator Auto Start"
-Type=Application
-Exec=vindicator /tmp/signal "wifistart.sh"

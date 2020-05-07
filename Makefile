@@ -1,8 +1,8 @@
 ifeq ($(PREFIX),)
 	PREFIX := /usr/local
 endif
-ifeq ($(XDG_DEST),)
-	XDG_DEST := /etc/xdg/autostart
+ifeq ($(SYSTEMD_DEST),)
+	SYSTEMD_DEST := /usr/lib/systemd/user
 endif
 
 help:
@@ -22,12 +22,12 @@ install: vindicator
 	install -d $(PREFIX)/bin/
 	install -m 755 get_iw_signal $(PREFIX)/bin/
 	install -m 755 wifistart.sh $(PREFIX)/bin
-	install -d $(XDG_DEST)
-	install -m 755 indicator.desktop $(XDG_DEST)
+	install -d $(SYSTEMD_DIST)
+	install -m 755 indicator.service $(XDG_DEST)
 	cd vindicator && $(MAKE) PREFIX=$(PREFIX) install
 
 uninstall:
 	rm $(PREFIX)/bin/get_iw_signal
 	rm $(PREFIX)/bin/vindicator	
 	rm $(PREFIX)/bin/wifistart.sh
-	rm $(XDG_DEST)/indicator.service
+	rm $(SYSTEMD_DEST)/indicator.service
