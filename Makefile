@@ -22,8 +22,8 @@ install: vindicator
 	install -d $(PREFIX)/bin/
 	install -m 755 get_iw_signal $(PREFIX)/bin/
 	install -m 755 wifistart.sh $(PREFIX)/bin
-	install -d $(SYSTEMD_DIST)
-	install -m 755 indicator.service $(XDG_DEST)
+	install -d $(SYSTEMD_DEST)
+	install -m 755 indicator.service $(SYSTEMD_DEST)
 	cd vindicator && $(MAKE) PREFIX=$(PREFIX) install
 
 uninstall:
