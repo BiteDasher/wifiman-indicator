@@ -27,7 +27,7 @@ wireless-tools
 
 # Installation:
 For wifiman, **git clone https://github.com/BiteDasher/wifiman.git && cd wifiman && make && sudo make install** \
-For this indicator, __make all && sudo make install && ./dist_install.sh__
+For this indicator, __make all && sudo make install && wmindtoggle start__
 
 # HUGE Thanks to:
 https://github.com/platofff for writing this stuff.
