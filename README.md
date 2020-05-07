@@ -8,7 +8,8 @@ valac (I have 0.48.5) (only for compiling)
 GTK3 \ 
 LibIndicator \
 zenity \
-systemd
+systemd \
+iwconfig
 
 # Installation:
 For wifiman, **git clone https://github.com/BiteDasher/wifiman.git** \
