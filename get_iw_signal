@@ -1,10 +1,3 @@
-#!/usr/bin/env bash
-iwconfig=$(which iwconfig || ls /usr/sbin/iwconfig || (echo x && exit -1))
-res=$($iwconfig 2>/dev/null | grep "Link Quality" | sed -e 's/^[ \t]*//' | cut -d" " -f 2 | cut -d"=" -f 2)
-if [ -z "$res" ]
-then
-	echo '0/100'
-else
-	echo $res
-fi
-
+#!/usr/bin/bash
+res=$(iwconfig 2>/dev/null | grep "Link Quality" | sed -e 's/^[ \t]*//' | cut -d" " -f 2 | cut -d"=" -f 2)
+if [ -z "$res" ]; then echo '0/100'; else echo $res; fi
