@@ -8,23 +8,12 @@ sed "s/\#\[Desktop\ Entry\]/\[Desktop\ Entry\]/g" -i /etc/xdg/autostart/indicato
 sed "s/\[Desktop\ Entry\]/\#\[Desktop\ Entry\]/g" -i /etc/xdg/autostart/indicator.desktop; echo Removed from autoload; fi; exit 0
 ;;
 start)
-vindicator /tmp/signal "pkexec wifigui" &>/dev/null 2>&1 & disown
-exit 0
+vindicator /tmp/signal "pkexec wifigui" &>/dev/null 2>&1 & disown; exit 0
 ;;
 stop)
-killall vindicator
-exit 0
+killall vindicator; exit 0
 ;;
 *)
-echo "Available arguments:
-toggle
-start
-stop"
-exit 1
-esac
+echo -e "Available arguments:\ntoggle\nstart\nstop"; exit 1; esac
 else
-echo "Available arguments:
-toggle
-start
-stop"
-exit 1; fi
+echo -e "Available arguments:\ntoggle\nstart\nstop"; exit 1; fi
