@@ -29,7 +29,7 @@ polkit
 ## Note for Debian users:
 
 Before installation, make sure you executed __./debian_patch.sh__. Or, if you are maintaining this, make sure you compiling with this variables: \
-**PREFIX=yourdir/usr XDG_DEST=yourdir/etc/xdg/autostart PK_DEST=yourdir/usr/share/polkit-1 PK_EXEC_DEST=yourdir\\/usr\\/bin**
+**PREFIX=yourdir/usr XDG_DEST=yourdir/etc/xdg/autostart PK_DEST=yourdir/usr/share/polkit-1 "PK_EXEC_DEST=yourdir\\/usr\\/bin"**
 
 # Installation:
 For wifiman, **git clone https://github.com/BiteDasher/wifiman.git && cd wifiman && make && sudo make install** \
