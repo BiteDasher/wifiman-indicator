@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 if [ "$(iwconfig 2>/dev/null | grep -Eo "ESSID:off/any")" ]; then
 check=no; else
 	if [ "$(iwconfig 2>/dev/null | grep -Eo "Link Quality:0")" ]; then
