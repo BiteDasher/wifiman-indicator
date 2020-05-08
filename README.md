@@ -32,7 +32,7 @@ Before installation, make sure you executed __./debian_patch.sh__. Or, if you ar
 **PREFIX=yourdir/usr XDG_DEST=yourdir/etc/xdg/autostart PK_DEST=yourdir/usr/share/polkit-1 PK_EXEC_DEST="\\/usr\\/bin"**
 
 # Installation:
-For wifiman, **git clone https://github.com/BiteDasher/wifiman.git && cd wifiman && make && sudo make install** \
+For wifiman, **git clone https://github.com/BiteDasher/wifiman.git && cd wifiman && sudo make install** \
 For this indicator, __make all && sudo make install && wmindtoggle start__
 
 # HUGE Thanks to:
