@@ -20,7 +20,8 @@ LibAppIndicator \
 xdg-user-dirs \
 binutils (makedepend)\
 wireless-tools \
-polkit
+polkit \
+coreutils
 
 # How-to build:
 
