@@ -25,13 +25,13 @@ clean:
 	cd vindicator
 	make clean
 
-install: vindicator
+install:
 	install -d $(PREFIX)/bin/
 	install -m 755 get_iw_signal $(PREFIX)/bin/
 	install -m 755 wmindtoggle $(PREFIX)/bin
 	install -d $(XDG_DEST)
 	install -m 644 indicator.desktop $(XDG_DEST)
-	cd vindicator && $(MAKE) PREFIX=$(PREFIX) UPDATE_ICON=../draw.vala install
+	cd vindicator && install -d $(PREFIX)/bin/ && install -m 755 vindicator $(PREFIX)/bin/
 	install -d $(PK_DEST)
 	install -m 644 org.bitedasher.wifigui.policy $(PK_DEST)
 	sed "s/\#\#\#\#\#/$(PK_EXEC_DEST)\/wifigui/g" -i $(PK_DEST)/org.bitedasher.wifigui.policy
