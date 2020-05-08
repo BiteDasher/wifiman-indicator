@@ -1,3 +1,4 @@
 #!/usr/bin/bash
+check=$(iwconfig 2>/dev/null | grep -Eo "ESSID:off/any")
 res=$(iwconfig 2>/dev/null | grep "Link Quality" | sed -e 's/^[ \t]*//' | cut -d" " -f 2 | cut -d"=" -f 2)
-if [ -z "$res" ]; then echo '0/100'; else echo $res; fi
+if [ -n "$check" ]; then echo '0/100'; else echo $res; fi
