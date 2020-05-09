@@ -20,8 +20,7 @@ LibAppIndicator \
 xdg-user-dirs \
 binutils (makedepend)\
 wireless-tools \
-polkit \
-OpenSans font
+polkit
 
 # How-to build:
 
