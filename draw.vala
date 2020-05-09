@@ -50,7 +50,7 @@ namespace Custom {
 
 
         context.set_source_rgb (r, g, b);
-        context.select_font_face ("FreeSans", Cairo.FontSlant.NORMAL, Cairo.FontWeight.BOLD);
+        context.select_font_face ("OpenSans", Cairo.FontSlant.NORMAL, Cairo.FontWeight.BOLD);
         context.set_font_size (60);
         context.move_to (5, 50);
         string text;
